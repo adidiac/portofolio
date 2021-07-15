@@ -1,17 +1,7 @@
-$stem-height: 20vh;
-$stem-width: 2vh;
-$pointer-width: 2vh;
-$pointer-space: 4vh;
 .arrow {
-    width: $stem-width;
-    height: $stem-height;
     margin: 5% auto;
-    border-radius: 3vh;
-    background-color: white;
-    background: linear-gradient(to bottom, rgba(255, 255, 255, 0), white 75%);
     -webkit-animation: 2s soft-blink infinite alternate;
     animation: 2s soft-blink infinite alternate;
-    position: relative;
     opacity: 0;
 }
 
@@ -37,20 +27,4 @@ $pointer-space: 4vh;
     100% {
         opacity: 0.8;
     }
-}
-
-.arrow:after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: - ($pointer-space + $stem-width) / 2-1.4;
-    border-bottom: $pointer-width solid white;
-    border-right: $pointer-width solid white;
-    border-top: $pointer-width solid transparent;
-    border-left: $pointer-width solid transparent;
-    border-radius: 1vh;
-    width: 7vh;
-    height: 7vh;
-    -webkit-transform: rotate(45deg);
-    transform: rotate(45deg);
 }

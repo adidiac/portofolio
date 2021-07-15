@@ -1,0 +1,7 @@
+.growCard {
+    transition: all .2s ease-in-out;
+}
+
+.growCard:hover {
+    transform: scale(1.1);
+}

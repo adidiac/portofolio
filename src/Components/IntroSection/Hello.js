@@ -4,7 +4,7 @@ import { useEffect,useState} from 'react';
 function Hello() {
 
     return (
-    <div class="HelloMain" class="center">
+    <div class="center">
       <Typewriter options={{delay:20}}
         onInit={(typewriter) => {
           typewriter.typeString(`Hello! I'm Diac Adrian. I'm a student at Faculty of Information Systems and Cyber ​​Security at "FERDINAND I" MILITARY TECHNICAL ACADEMY.
