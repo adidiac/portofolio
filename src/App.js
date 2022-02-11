@@ -41,7 +41,7 @@ function App() {
   const styleSection=(Image)=>{
     return {
       scrollBehavior: "smooth",
-      backgroundImage: `url(${Image})`,
+      backgroundColor:"#171c28",
       backgroundSize:"cover",
       backgroundRepeat:'no-repeat',
       width:"100%",
@@ -55,6 +55,7 @@ function App() {
       backgroundColor:"#171c28",
       backgroundSize:"cover",
       backgroundRepeat:'no-repeat',
+      textAlign:"center",
       height: "100%", 
       margin:0,padding: 30,
       justifyContent:'space-evenly',display:'flex',flexDirection:'column',alignItems:"center"
@@ -63,7 +64,7 @@ function App() {
     <div>
       {/**Hello */}
       <MyNav></MyNav>
-      <section id="intro" style={styleSection2}>
+      <section id="intro" style={styleSection()}>
           <Row style={{paddingTop:"2vh",paddingBottom:"2vh"}}>
             <Avatar></Avatar>
           </Row>
@@ -74,6 +75,7 @@ function App() {
             <DownArrow fontS={'10vh'} where={'#about'}></DownArrow>
           </Row>
       </section>
+      <hr style={{backgroundColor:"silver",height:1,margin:20}}></hr>
       {/* about me */}
       <section id="about" style={styleSection2}>
         <h1 style={{margin:0,color:'white',textAlign:'center',position:'relative'}}>Education and Experience</h1>
@@ -82,12 +84,13 @@ function App() {
        <CustomizedTimeline></CustomizedTimeline>
        <DownArrow fontS={'8vh'} where={'#skills'}></DownArrow>
      </section>
+     <hr style={{backgroundColor:"silver",height:1,margin:20}}></hr>
       {/**skills */}
       <section id="skills" style={styleSection2}>
       <h1 style={{margin:0,color:'white',textAlign:'center',position:'relative'}}>Skills</h1>
       <br></br>
       <br></br>
-        <Row style={{display:"flex",flexWrap:"wrap",textAlign:"center",justifyContent:"space-evenly",margin:20}}>
+        <Row style={{textAlign:"center",margin:30,width:"100%"}}>
          {
            skillList.map(el=><MyCard
              color={el.color}
@@ -102,17 +105,19 @@ function App() {
         <DownArrow fontS={'8vh'} where={'#projects'}></DownArrow>
       </section>
      {/**projects */}
+     <hr style={{backgroundColor:"silver",height:1,margin:20}}></hr>
      <section id="projects" style={styleSection2}>
      <h1 style={{margin:0,color:'white',textAlign:'center',position:'relative'}}>My Projects</h1>
       <br></br>
       <br></br>
      <Row style={{display:"flex",flexWrap:"wrap",textAlign:"center",justifyContent:"space-evenly",margin:20}}>
-       {projectList.map(e=><ProjectCard title={e.title} gradient={e.gradientColor} image={e.backgroundImage}></ProjectCard>)}
+       {projectList.map(e=><ProjectCard title={e.title} gradient={e.gradientColor} image={e.backgroundImage} link={e.link}></ProjectCard>)}
      </Row>
      <br></br>
       <DownArrow fontS={'8vh'} where={'#contact'}></DownArrow>
      </section>
      {/**contact me */}
+     <hr style={{backgroundColor:"silver",height:1,margin:20}}></hr>
      <section  id="contact" style={styleSection2}>
      <h1 style={{margin:0,color:'white',textAlign:'center',position:'relative'}}>Contact</h1>
      <br></br>
@@ -146,6 +151,9 @@ function App() {
      </Col>
      </Row> 
      </Container>
+     <br></br>
+     <br></br>
+     <br></br>
     </section>
     </div>
   );

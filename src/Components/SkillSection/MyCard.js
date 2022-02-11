@@ -15,7 +15,7 @@ export default function MyCard({title,description,color,icon,more})
 
     return <Card
     text={'white'}
-    style={{ width: '15rem',margin:10,fontSize:"1rem",backgroundColor:color}}
+    style={{ width: '15rem',margin:20,fontSize:"1rem",backgroundColor:color}}
   >
     <Card.Header style={{justifyContent:"space-between",display:"flex",textAlign:"center"}}>
 
@@ -40,7 +40,7 @@ export default function MyCard({title,description,color,icon,more})
         <DialogContent>
           <DialogContentText id="alert-dialog-description">
           <ListGroup>
-            {more.map(el=><ListGroup.Item style={{backgroundColor:"blueviolet"}}><a style={{color:"white"}} href={el} target="blank">Certificate</a></ListGroup.Item>)}
+            {more.map(el=><ListGroup.Item style={{backgroundColor:"blueviolet"}}><a style={{color:"white"}} href={el.url} target="blank">{el.name}</a></ListGroup.Item>)}
           </ListGroup>
           </DialogContentText>
         </DialogContent>
