@@ -5,7 +5,6 @@ import { cardStyle,rowStyle,columnStyle } from '../inlineStyle';
 
 const Room = () => {
   const { scene } = useGLTF('/room/scene.gltf');
-  console.log('Room');
 
   return <mesh>
     <Html

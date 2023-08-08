@@ -27,7 +27,6 @@ const experienceList = [
 
 const Room2 = () => {
   const { scene } = useGLTF('/room2/scene.gltf');
-  console.log('Room2');
 
   return <mesh>
     <Html

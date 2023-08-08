@@ -9,6 +9,8 @@ import { useState } from "react";
 import Room from "./Room";
 import Room2 from "./Room2";
 import Room3 from "./Room3";
+import Room4 from "./Room4";
+import Contact from "./Contact";
 
 export default function Three() {
 
@@ -17,7 +19,7 @@ export default function Three() {
     const countRef = useRef(0);
     const [change, setChange] = useState(false);
 
-    const scenes = [ <House />, <Room />,<Room2 />, <Room3 />];
+    const scenes = [ <House />, <Room />,<Room2 />, <Room3 />,<Room4 />, <Contact />];
     const moveCamera = async () => {
         if (!!orbitControlsRef.current) {
             const timeline = gsap.timeline( {paused: true});
@@ -43,10 +45,10 @@ export default function Three() {
                     duration: 2,
                     y:1,
                 });
-
+                const z1 = countRef.current!=scenes.length ? 3.5 : 12;
                 timeline.to(cameraRef.current.position, {
                     duration: 2,
-                    z: 3.5,
+                    z: z1,
                 }, "<");
 
                 timeline.play();

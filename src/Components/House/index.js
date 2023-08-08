@@ -4,7 +4,6 @@ import { angleToRadians } from '../../utils/angle';
 
 const House = () => {
   const { scene } = useGLTF('/house/scene.gltf');
-  console.log('House');
   return <mesh>
         <spotLight args={["#ffffff", 30, 7, angleToRadians(45), 0.4]} position={[1.2, 1, 6]} castShadow />
         <spotLight args={["#ffffff", 30, 7, angleToRadians(45), 0.4]} position={[-0.8, 2.8, -0.2]} castShadow />
