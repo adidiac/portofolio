@@ -41,4 +41,4 @@ export const work = {
     ministry:ministry
 }
 
-export const assetsPath = '';
+export const assetsPath = '.';
