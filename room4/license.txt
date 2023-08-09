@@ -1,0 +1,11 @@
+Model Information:
+* title:	Clash royale, Builders workshop
+* source:	https://sketchfab.com/3d-models/clash-royale-builders-workshop-54ca3be7a80148d6b8a4f039e39d57e5
+* author:	brendan wood (https://sketchfab.com/brendanwood872)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Clash royale, Builders workshop" (https://sketchfab.com/3d-models/clash-royale-builders-workshop-54ca3be7a80148d6b8a4f039e39d57e5) by brendan wood (https://sketchfab.com/brendanwood872) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

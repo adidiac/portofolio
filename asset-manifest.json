@@ -1,13 +1,26 @@
 {
   "files": {
-    "main.css": "/portofolio/static/css/main.af2788f0.css",
-    "main.js": "/portofolio/static/js/main.2039e9dc.js",
-    "index.html": "/portofolio/index.html",
-    "main.af2788f0.css.map": "/portofolio/static/css/main.af2788f0.css.map",
-    "main.2039e9dc.js.map": "/portofolio/static/js/main.2039e9dc.js.map"
+    "main.css": "/static/css/main.dff07b71.css",
+    "main.js": "/static/js/main.352376bb.js",
+    "static/media/ministry.png": "/static/media/ministry.1f9cf8b43a57a9e5c103.png",
+    "static/media/university.png": "/static/media/university.eba8de729c7fa264d5a4.png",
+    "static/media/academy.png": "/static/media/academy.ebc122b29de666916d18.png",
+    "static/media/1rd.png": "/static/media/1rd.51db724a071ea0e57034.png",
+    "static/media/3rd.png": "/static/media/3rd.a0010e399e7e06616410.png",
+    "static/media/cert.png": "/static/media/cert.c822ed8bfabd5c8e72a4.png",
+    "static/media/coherent.png": "/static/media/coherent.d0903c6a1155e9e58916.png",
+    "static/media/6.png": "/static/media/6.03ddc5090e58a33b868e.png",
+    "static/media/4.png": "/static/media/4.a407f3e986aa0d602fe7.png",
+    "static/media/2.png": "/static/media/2.cf941c5e4c2b70e0cad1.png",
+    "static/media/1.png": "/static/media/1.ed0d42bd5c1d66fcf35b.png",
+    "static/media/3.png": "/static/media/3.6d233ac03ed37625c3cd.png",
+    "static/media/5.png": "/static/media/5.4eca76d0e689e23cea54.png",
+    "index.html": "/index.html",
+    "main.dff07b71.css.map": "/static/css/main.dff07b71.css.map",
+    "main.352376bb.js.map": "/static/js/main.352376bb.js.map"
   },
   "entrypoints": [
-    "static/css/main.af2788f0.css",
-    "static/js/main.2039e9dc.js"
+    "static/css/main.dff07b71.css",
+    "static/js/main.352376bb.js"
   ]
 }
