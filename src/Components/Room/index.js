@@ -1,11 +1,11 @@
 import React from 'react';
 import { Html, useGLTF } from '@react-three/drei';
 import { angleToRadians } from '../../utils/angle';
-import { cardStyle,rowStyle,columnStyle } from '../inlineStyle';
+import { cardStyle,rowStyle} from '../inlineStyle';
+import { assetsPath,education } from '../../utils/consts';
 
 const Room = () => {
-  const { scene } = useGLTF('/room/scene.gltf');
-
+  const { scene } = useGLTF(assetsPath+'/room/scene.gltf');
   return <mesh>
     <Html
            position={[-0.5, 2, -1.2]}
@@ -25,7 +25,7 @@ const Room = () => {
             <p style={{fontSize:2.5}}
             >Military Tehnical Academy Ferdinand I</p>
             <div style={rowStyle}>
-                <img src="/education/academy.png" style={{width: 15, height: 12}}/>
+                <img src={education.academy} style={{width: 15, height: 12}}/>
                 <p style={{fontSize:1.5}}>
                     Bucharest, Romania -
                     Bachelor of Computer Science and Information Technology
@@ -45,7 +45,7 @@ const Room = () => {
                 University Of Bucharest
             </p>
             <div style={rowStyle}>
-                <img src="/education/university.png" style={{width: 15, height: 12}}/>
+                <img src={education.university} style={{width: 15, height: 12}}/>
                 <p style={{fontSize:1.5}}>
                     Bucharest, Romania -
                     Master of Computer Science and Information Technology

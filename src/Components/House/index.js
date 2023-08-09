@@ -1,9 +1,10 @@
-import React from 'react';
+ import React from 'react';
 import { useGLTF } from '@react-three/drei';
 import { angleToRadians } from '../../utils/angle';
+import { assetsPath } from '../../utils/consts';
 
 const House = () => {
-  const { scene } = useGLTF('/house/scene.gltf');
+  const { scene } = useGLTF(assetsPath+'/house/scene.gltf');
   return <mesh>
         <spotLight args={["#ffffff", 30, 7, angleToRadians(45), 0.4]} position={[1.2, 1, 6]} castShadow />
         <spotLight args={["#ffffff", 30, 7, angleToRadians(45), 0.4]} position={[-0.8, 2.8, -0.2]} castShadow />
