@@ -3,8 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "engines": {
-    "npm": "16.18.0",// here put your version
-    "node": "8.19.2" // here put your version
+    "npm": "16.18.0",
+    "node": "8.19.2"
   },
   "dependencies": {
     "@mui/icons-material": "^5.14.1",
