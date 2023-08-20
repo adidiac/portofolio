@@ -6,10 +6,7 @@ import '../../App.css'
 import {assetsPath} from '../../utils/consts'
 import { awardsList } from './awards';
 
-const Room3 = () => {
-  const { scene } = useGLTF(assetsPath+'/room3/scene.gltf');
-  console.log('Room');
-
+const Room3 = ({scene}) => {
   return <mesh>
     <Html
            position={[0.1, 1, -3]}

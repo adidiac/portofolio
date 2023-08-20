@@ -11,6 +11,8 @@ import Room2 from "./Room2";
 import Room3 from "./Room3";
 import Room4 from "./Room4";
 import Contact from "./Contact";
+import { useGLTF } from '@react-three/drei';
+import { assetsPath } from './../utils/consts';
 
 export default function Three() {
 
@@ -18,8 +20,18 @@ export default function Three() {
     const cameraRef = useRef(null);
     const countRef = useRef(0);
     const [change, setChange] = useState(false);
+    const house=useGLTF(assetsPath+'/house/scene.gltf');
+    const room=useGLTF(assetsPath+'/room/scene.gltf');
+    const room2=useGLTF(assetsPath+'/room2/scene.gltf');
+    const room3=useGLTF(assetsPath+'/room3/scene.gltf');
+    const room4=useGLTF(assetsPath+'/room4/scene.gltf');
 
-    const scenes = [ <House />, <Room />,<Room2 />, <Room3 />,<Room4 />, <Contact />];
+    const scenes = [ <House scene={house.scene}/>,
+    <Room scene={room.scene}/>,
+    <Room2 scene={room2.scene} />,
+    <Room3 scene={room3.scene}/>,
+    <Room4 scene={room4.scene}/>,
+    <Contact />];
     const moveCamera = async () => {
         if (!!orbitControlsRef.current) {
             const timeline = gsap.timeline( {paused: true});

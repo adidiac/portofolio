@@ -7,9 +7,7 @@ import {assetsPath} from '../../utils/consts'
 import { skillsLists } from './skills';
 
 
-const Room4 = () => {
-  const { scene } = useGLTF(assetsPath+'/room4/scene.gltf');
-
+const Room4 = ({scene}) => {
   return <mesh>
         <Html
             position={[0.05, 3, -10]}

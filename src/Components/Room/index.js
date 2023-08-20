@@ -4,8 +4,7 @@ import { angleToRadians } from '../../utils/angle';
 import { cardStyle,rowStyle} from '../inlineStyle';
 import { assetsPath,education } from '../../utils/consts';
 
-const Room = () => {
-  const { scene } = useGLTF(assetsPath+'/room/scene.gltf');
+const Room = ({scene}) => {
   return <mesh>
     <Html
            position={[-0.5, 2, -1.2]}

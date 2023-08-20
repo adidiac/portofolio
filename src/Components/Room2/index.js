@@ -6,9 +6,7 @@ import {assetsPath} from '../../utils/consts';
 import { experienceList } from './experience';
 
 
-const Room2 = () => {
-  const { scene } = useGLTF(assetsPath+'/room2/scene.gltf');
-
+const Room2 = ({scene}) => {
   return <mesh>
     <Html
         position={[0.1, 1, -1]}
